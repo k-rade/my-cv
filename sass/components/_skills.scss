@@ -1,0 +1,28 @@
+.section-skills {
+    text-align: center;
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, rgba(5, 75, 252, 0.8), rgba(5, 198, 252, 0.8)), url("../img/img2.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.skills-box {
+    margin-left: 2rem;
+    min-height: 20rem;
+    background-color: rgba(white, 0.7);
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+    transition: all 0.3s;
+
+    &__text {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.03);
+    }
+}

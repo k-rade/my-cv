@@ -1,0 +1,41 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    max-width: 50%;
+    max-height: 20rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10; //nije vazno koji je br
+    transition: all 0.2s;
+    outline-offset: 0.5rem;
+
+    &--p1 {
+      left: 2rem;
+      top: -2rem;
+    }
+
+    &--p2 {
+      left: 15rem;
+      top:3rem;
+    }
+
+    &--p3 {
+      left: 6rem;
+      top: 8rem;
+    }
+
+    &:hover{
+      outline: 0.5rem double $color-default;
+      transform:scale(1.1);
+      box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
+      z-index: 20; // ovdje je bitno da je veci od default zindexa
+    }
+  }
+
+//kada hoverujemo composition slika koja nije hoverovana se smanjuje
+  &:hover &__photo:not(:hover){
+    transform:scale(0.8);
+  }
+}

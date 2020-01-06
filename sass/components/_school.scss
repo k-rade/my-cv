@@ -1,0 +1,18 @@
+.school {
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;
+    box-shadow: 0 3rem 6rem rgba(black, 0.1);
+    background-color: rgba(white, 0.6);
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    transform: skewX(-12deg);
+
+    &__text {
+        transform: skewX(12deg);
+    }
+}
+
+.center-text {
+    text-align: center;
+}

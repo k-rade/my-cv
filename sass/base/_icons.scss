@@ -1,0 +1,37 @@
+.fa-wordpress {
+    font-size: 3rem;
+    color: gray;
+}
+
+.fa-html5 {
+    font-size: 3rem;
+    color: orangered;
+}
+
+.fa-css3-alt {
+    font-size: 3rem;
+    color: $color-default;
+}
+
+.fa-angular {
+    font-size: 3rem;
+    color: #f45858;
+}
+
+.fa-angle-down {
+    color: $color-default;
+    font-size: 2rem;
+    horizontal-align: middle;
+    margin-left: 50%;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+#white {
+    margin-top: 2rem;
+    margin-left: -2rem;
+    color: white;
+}

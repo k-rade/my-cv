@@ -1,0 +1,41 @@
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/typography";
+@import "base/icons";
+@import "components/button";
+@import "components/school";
+@import "components/skills";
+@import "layout/grid";
+@import "layout/navigation";
+@import "layout/header";
+@import "components/about";
+
+.a-footer {
+    color: white;
+
+    &:hover {
+        color: $color-default;
+        text-decoration: none;
+    }
+}
+
+.ankor {
+    transform: translateY(-7rem);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*:after {
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
